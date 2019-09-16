@@ -5,7 +5,6 @@ import spark.template.handlebars.HandlebarsTemplateEngine;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import static spark.Spark.*;
@@ -27,7 +26,7 @@ public class App {
         Hero.setUpNewHero();
         Hero.setUpNewHero1();
         Squad.setUpNewSquad();
-//        Squad.setUpNewSquad1();
+//        models.Squad.setUpNewSquad1();
 
         get("/", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
