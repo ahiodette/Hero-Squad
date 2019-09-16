@@ -33,13 +33,13 @@ public class Hero {
     public static Hero findById(int id) {return instances.get(id-1);}
 
     public static Hero setUpNewHero(){
-        return new Hero("indege",23,"flying","fire");
+        return new Hero("Gasana",23,"Football","eat");
     }
     public static Hero setUpNewHero1(){
-        return new Hero("inkoko",30,"Night Vision","Light");
+        return new Hero("Gafuku",30,"Digging","Flying");
     }
     public static Hero setUpNewHero2(){
-        return new Hero("umunwa",30,"Night Vision","Light");
+        return new Hero("Gashakamba",30,"Dance","Play");
     }
 
 }
