@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
+@media only screen and (max-width: 700px){
+	.hero-img{
+		width: 100%;
+	}
+	@import url('http://netdna.bootstrapcdn.com/twitter-bootstrap/2.0.4/css/bootstrap-combined.min.css');
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -6,36 +11,25 @@
   transition: all 0.2s ease-out;
   font-family: 'Eczar', serif;
 }
-a{
-  text-decoration: none;
-	color: inherit;
-	display: inline-block;
-}
+
 .btns{
-  border: none;
   cursor: pointer;
   outline: none;
   padding: 5px 20px;
-  font-family: 'Ceviche One', cursive;
-  font-size: 1.53em;
   border-radius: 20px;
   margin-top: 5px;
-
 }
 .btns:hover{
-  background: rgb(0, 0, 0);
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.24);
-  color: white;
+  background: grey;
+  color: black;
 }
-.btn-green{
-	background: green;
-	margin-top: 5px;
-}
+
 body{
 background-image: url('images/home.jpeg');
 background-size: cover;
-color:red;
-
+color:black;
+background-color: rgba(0,0,0,.5);
+font-family: 'Acme', sans-serif;
 }
 .form{
   position: relative;
@@ -50,7 +44,7 @@ color:red;
 }
 .form>input[type=text],
 .form>input[type=number]{
-  background: none;
+  background-color: White;
   width: 100%;
   padding: 10px;
   margin: 10px 0;
@@ -59,17 +53,10 @@ color:red;
   color: black;
   outline: none;
   display: block;
-  /*animation: formLd 1.2s linear 1;*/
   font-size: 1em;
 }
 .form>input[type=text]:nth-child(even){
-	/*animation: formLd 0.8s linear 1;*/
 }
-@keyframes formLd{
-	0%{width: 0%;border-color: green;box-shadow: 0px 2px 2px rgba(255,255,255,0.3);}
-	100%{border-color: orange;box-shadow: 0px 2px 2px rgba(255,255,255,0.3);}
-}
-
 .form input[type=submit]{
   margin-top: 10px;
   background: rgb(17, 54, 17);
@@ -81,13 +68,3 @@ color:red;
 ::placeholder{
   color: rgb(124, 122, 122);
 }
-.home{
-text align:centre;
-}
-
-
-
-@media only screen and (max-width: 700px){
-	.hero-img{
-		width: 100%;
-	}

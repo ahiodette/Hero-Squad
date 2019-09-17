@@ -1,5 +1,5 @@
 {{#partial "content"}}
-    <section class="landing-pg">
+    <section class="landing-pg text-center">
         <div class="land-left">
         </div>
         <div class="land-right">
@@ -8,27 +8,31 @@
         <div class="squad">
             <div id="newMember">
                 <p class="close">&cross;</p>
-                <h2>Choose Squad Members</h2>
+                <h2>REGISTERED HEROES</h2>
                 {{#each heroes}}
                     <div class="hero-item">
 
                         <div class="hero-detail">
                             <p>Name: {{name}}</p>
+                            <p>Age: {{ age }} years old</p>
                             <p>Super power: {{ power }}</p>
-                            <a class="btns" href="/squad/new/{{id}}">Add To Squad</a>
+                            <p>Weakness: {{ weakness }}</p>
+                            <a class="btn btn-success" href="/squad/new/{{id}}">Add To Squad</a>
                         </div>
                     </div>
                 {{/each}}
             </div>
+        </div>
+        <div>
         <h2>
-            <a class="btns" href="/squad-form">Create Your Squad</a>
+            <a class="btn btn-success" href="/squad-form">Create Your Squad</a>
             <br><br>
             {{#if squads}}
                 LIST OF SQUADS
             </h2>
                 {{#each squads}}
                     <div class="squad-cont">
-                        <img src="" alt="">
+                        <img src="./images/home.jpeg" alt="Hero">
                         <div>
                             <h1>{{ squadName }} </h1>
                             <p>Id: {{squadId}}</p>
@@ -36,17 +40,21 @@
                             <p>Max participants: {{ size }}</p>
                             <br><br>
                             <h3>MEMBERS</h3>
-                            <a class="btns" href="/new/member/{{squadId}}">Bind Id</a>
-                            <button class="addMember add-btn" >Add New Member</button>
-                            {{#each squadMembers}}
-                                <div class="member-cont">
-                                    <h5>Name: {{this.name}}</h5>
-                                    <h5>Power: {{power}}</h5>
-                                    <Button class="btns">Remove</Button>
+<!--
+                            <a class="btn btn-success" href="/hero-form">Add New Member</a>
+                            <ol>
+                                <li>
+                                     {{#each squadMembers}}
+                                        <div class="member-cont">
+                                        <h5>Name: {{ this.name }}</h5>
+                                        <h5>Age: {{ age }}</h5>
+                                        <h5>Power: {{ power }}</h5>
+                                        <h5>Weaknesses: {{ weakness }}</h5>
+
                                 </div>
                             {{/each}}
-
-
+                                </li>
+                            </ol>
                         </div>
                     </div>
                 {{/each}}
