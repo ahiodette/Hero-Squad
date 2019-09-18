@@ -12,16 +12,16 @@
 /*  font-family: 'Eczar', serif;*/
 }
 
-.btns{
+.btn{
   cursor: pointer;
   outline: none;
   padding: 5px 20px;
   border-radius: 20px;
   margin-top: 5px;
 }
-.btns:hover{
+.btn:hover{
   background: grey;
-  color: black;
+  color: green;
 }
 
 body{
@@ -34,6 +34,7 @@ font-family: 'Acme', sans-serif;
 .form{
   position: relative;
   z-index: 3;
+  float: right;
   width: 500px;
   margin-top: 15vh;
 

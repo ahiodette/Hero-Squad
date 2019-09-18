@@ -1,5 +1,5 @@
 {{#partial "content"}}
-    <section class="landing-pg text-center">
+    <section class="landing-pg ">
         <div class="land-left">
         </div>
         <div class="land-right">
@@ -43,19 +43,21 @@
                             <h3>MEMBERS</h3>
 
                             <a class="btn btn-success" href="/hero-form">Add New Member</a>
-                            <ol>
-                                <li>
+
                                      {{#each squadMembers}}
+                                     <ol>
+                                     <li>
                                         <div class="member-cont">
                                         <h5>Name: {{ this.name }}</h5>
                                         <h5>Age: {{ age }}</h5>
                                         <h5>Power: {{ power }}</h5>
                                         <h5>Weaknesses: {{ weakness }}</h5>
-
+                                        </div>
+                                     </li>
+                                     </ol>
                                 </div>
                             {{/each}}
-                                </li>
-                            </ol>
+
                         </div>
                     </div>
                 {{/each}}
