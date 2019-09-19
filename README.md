@@ -9,7 +9,7 @@ The **Hero-Squad** is designed to help in heroes recruitment. It requires to ide
 * Open your computer
 * Connect to the internet
 * Open the intelliJ
-* Go to [my GitHub page](https://github.com/ahiodette/Caesar-Cipher)
+* Go to [my GitHub page](https://github.com/ahiodette/Hero-Squad)
 
 ## Known bugs
 All squads are not able to be assigned heroes, and sometimes it is not possible to see the list of registered heroes, but these bugs will be debugged sooner.
